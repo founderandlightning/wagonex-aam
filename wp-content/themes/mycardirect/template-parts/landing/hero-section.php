@@ -1,4 +1,4 @@
-<section class="main-container">    
+<section class="main-container hero-section">    
     <div class="row w-100">
         <div class="col-md-6 hero-content-section">
             <h1>Subscription - The new <br /> alternative to car leasing<br /> and ownership</h1>

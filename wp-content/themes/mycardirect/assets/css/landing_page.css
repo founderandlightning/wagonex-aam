@@ -1,19 +1,21 @@
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .subscription-content-block h4 {
     font-size: 22px;
     line-height: 32px;
     margin: 0 0 15px 0;
     position: relative;
     text-transform: none;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .subscription-content-block h4::before {
     position: absolute;
     content: '';
     background: url(../images/sub-icon.svg) no-repeat;
-    width: 33px;
-    height: 33px;
+    width: 47px;
+    height: 47px;
     left: -53px;
     top: 0;
 }
@@ -147,6 +149,7 @@
     line-height: 32px;
     font-weight: 600;
     text-transform: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 .white-box p {
@@ -154,6 +157,7 @@
     line-height: 26px;
     color: #2D2E34;
     padding: 10px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .owl-item.active {
@@ -175,6 +179,7 @@
     font-weight: 600;
     text-transform: none;
     color: #2D2E34;
+    font-family: 'Open Sans', sans-serif;    
 }
 
 .how-it-work-section {
@@ -289,4 +294,87 @@
 .testimonial-white-box p {
     position: relative;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/***************************************************
+            Featured Vehicle Section
+***************************************************/
+.featured-vehicle-section {
+    background: #FFFFFF;
+    padding: 120px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.featured-vehicle-section h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: none;
+    color: #2D2E34;
+    margin: 0 0 30px 0;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+}
+.featured-vehicle-section .white-box-container {
+    padding: 0 40px;
+    text-align: center;
+}
+.featured-vehicle-section .owl-carousel .owl-item img {
+    display: inline-block;
+    margin: 0 0 40px 0;
+    width: 100%;
+}
+.featured-vehicle-section .car-brand-name {
+    font-size: 22px;
+    font-weight: normal;
+    color: #2D2E34;
+}
+.featured-vehicle-section .car-model-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 9px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.featured-vehicle-section .car-price {
+    color: #2A9FF4;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+.featured-vehicle-section .car-duration {
+    font-size: 12px;
+    line-height: 18px;
+    color: #95A2BA;
+    display: block;
+}
+.featured-vehicle-section .owl-carousel .owl-item img {
+    display: inline-block;
+    margin: 0 0 40px 0;
+    width: 100%;
+}
+.featured-vehicle-section .owl-carousel .owl-nav button.owl-prev {
+    background: url(../images/slider-left-icon.svg) no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 35%;
+    top: 80%;
+    cursor: pointer;
+}
+.featured-vehicle-section .owl-carousel .owl-nav button.owl-next {
+    background: url(../images/slider-right-icon.svg) no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 35%;
+    top: 80%;
+    cursor: pointer;
 }

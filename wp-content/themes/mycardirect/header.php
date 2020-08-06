@@ -24,19 +24,18 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/landing_carousel_theme.css" type="text/css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/landing_page.css" type="text/css" />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-		
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<?php wp_head(); ?>
 	</head>
 
 	<body>
 		<header id="site-header" class="header-footer-group" role="banner">
-
 			<div class="header-inner section-inner">
-
-				<div class="header-titles-wrapper">
-					
+				<div class="header-titles-wrapper">					
 					<div>
-						<a href="<?php bloginfo('template_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg" /></a>
+						<a href="<?php bloginfo('template_url'); ?>">
+							<img src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg" />
+						</a>
 					</div><!-- .header-titles -->
 
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
@@ -50,15 +49,11 @@
 				</div><!-- .header-titles-wrapper -->
 
 				<div class="header-navigation-wrapper">
-
 					<?php
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
-
 							<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Horizontal', 'twentytwenty' ); ?>" role="navigation">
-
 								<ul class="primary-menu reset-list-style">
-
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {
 
@@ -80,41 +75,33 @@
 											'walker'   => new TwentyTwenty_Walker_Page(),
 										)
 									);
-
 								}
 								?>
-
 								</ul>
-
 							</nav><!-- .primary-menu-wrapper -->
-
 						<?php
 					}
 
 					if ( true === $enable_header_search || has_nav_menu( 'expanded' ) ) {
 						?>
-
 						<div class="header-toggles hide-no-js">
-
 						<?php
 						if ( has_nav_menu( 'expanded' ) ) {
 							?>
-
 							<div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
-
 								<button class="toggle nav-toggle desktop-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 									<span class="toggle-inner">
-										<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
+										<span class="toggle-text">
+											<?php _e( 'Menu', 'twentytwenty' ); ?>
+										</span>
 										<span class="toggle-icon">
 											<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
 										</span>
 									</span>
 								</button><!-- .nav-toggle -->
-
 							</div><!-- .nav-toggle-wrapper -->
-
 							<?php
-						}
+							}
 						?>
 						</div><!-- .header-toggles -->
 					<?php

@@ -7,6 +7,7 @@ footer h4 {
     position: relative;
     text-transform: none;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .new-landing-footer {
@@ -19,6 +20,7 @@ footer h4 {
 }
 .new-landing-footer h4 {
     color: #717482;
+    font-family: 'Open Sans', sans-serif;
 }
 .new-landing-footer ul {
     margin: 0;
@@ -35,6 +37,7 @@ footer h4 {
     line-height: 28px;
     font-weight: 300;
     font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 .m-0 {
     margin: 0;
@@ -96,4 +99,7 @@ a.twitter-icon {
     padding: 0;
     display: flex;
     align-items: center;
+}
+.testimonail-logo {
+    margin: 0 auto;
 }

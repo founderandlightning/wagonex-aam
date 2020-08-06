@@ -1,4 +1,4 @@
-<section class="main-container">
+<section class="main-container subscription-section">
     <div class="col-md-12">
         <h2>What is car subscription?</h2>
         <h5>

@@ -22,5 +22,7 @@ get_header();
 <?php get_template_part( 'template-parts/landing/subscription-section-second' ); ?>
 <?php get_template_part( 'template-parts/landing/how-it-work' ); ?>
 <?php get_template_part( 'template-parts/landing/terms' ); ?>
+<?php get_template_part( 'template-parts/landing/featured-vehicles' ); ?>
+<?php get_template_part( 'template-parts/landing/testimonial' ); ?>
 
 <?php get_footer(); ?>

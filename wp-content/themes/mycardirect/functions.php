@@ -761,7 +761,7 @@ function twentytwenty_get_elements_array() {
 
 function aam_home_post() {
 	$labels = array(
-	  'name'               => _x( 'Homesections', 'post type general name' ),
+	  'name'               => _x( 'Home sections', 'post type general name' ),
 	  'singular_name'      => _x( 'Homesection', 'post type singular name' ),
 	  'add_new'            => _x( 'Add New', 'homesection' ),
 	  'add_new_item'       => __( 'Add New Home Section' ),
@@ -783,6 +783,69 @@ function aam_home_post() {
 	  'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
 	  'has_archive'   => true,
 	);
-	register_post_type( 'homesections', $args ); 
+	register_post_type('homesections', $args); 
   }
-  add_action( 'init', 'aam_home_post' );
+  add_action('init', 'aam_home_post');
+
+//**************************************************
+//  				About Section
+//**************************************************
+  function about_post() {
+	$labels = array(
+	  'name'               => _x( 'About sections', 'post type general name' ),
+	  'singular_name'      => _x( 'Aboutsection', 'post type singular name' ),
+	  'add_new'            => _x( 'Add New', 'aboutsection' ),
+	  'add_new_item'       => __( 'Add New About Section' ),
+	  'edit_item'          => __( 'Edit About Section' ),
+	  'new_item'           => __( 'New About Section' ),
+	  'all_items'          => __( 'About Sections' ),
+	  'view_item'          => __( 'View About Section' ),
+	  'search_items'       => __( 'Search About Sections' ),
+	  'not_found'          => __( 'No about section found' ),
+	  'not_found_in_trash' => __( 'No about section found in the Trash' ), 
+	  'parent_item_colon'  => '',
+	  'menu_name'          => 'About Sections'
+	);
+	$args = array(
+	  'labels'        => $labels,
+	  'description'   => 'Holds about sections and about section specific data',
+	  'public'        => true,
+	  'menu_position' => 5,
+	  'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+	  'has_archive'   => true,
+	);
+	register_post_type('aboutsections', $args); 
+  }
+  add_action('init', 'about_post');
+
+
+//**************************************************
+//  				How We Work
+//**************************************************
+function how_we_work_post() {
+	$labels = array(
+	  'name'               => _x( 'How we work', 'post type general name' ),
+	  'singular_name'      => _x( 'Worksection', 'post type singular name' ),
+	  'add_new'            => _x( 'Add New', 'worksection' ),
+	  'add_new_item'       => __( 'Add New How we work Section' ),
+	  'edit_item'          => __( 'Edit Work Section' ),
+	  'new_item'           => __( 'New How we work' ),
+	  'all_items'          => __( 'How We Work' ),
+	  'view_item'          => __( 'View How we work Section' ),
+	  'search_items'       => __( 'Search How we work Sections' ),
+	  'not_found'          => __( 'No how we work section found' ),
+	  'not_found_in_trash' => __( 'No how we work section found in the Trash' ), 
+	  'parent_item_colon'  => '',
+	  'menu_name'          => 'How we work'
+	);
+	$args = array(
+	  'labels'        => $labels,
+	  'description'   => 'Holds how we work sections and about section specific data',
+	  'public'        => true,
+	  'menu_position' => 5,
+	  'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+	  'has_archive'   => true,
+	);
+	register_post_type('howweworksections', $args); 
+  }
+  add_action('init', 'how_we_work_post');
